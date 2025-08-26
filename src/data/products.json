@@ -1,0 +1,244 @@
+{
+  "categories": [
+    {
+      "id": "cooling-packages",
+      "name": "پکیج های کولر سلولزی",
+      "slug": "cooling-packages",
+      "description": "پکیج های کامل کولر سلولزی برای مصارف صنعتی و خانگی",
+      "productCount": 12,
+      "subcategories": [
+        {"id": "industrial", "name": "صنعتی", "slug": "industrial", "productCount": 8},
+        {"id": "residential", "name": "خانگی", "slug": "residential", "productCount": 4}
+      ]
+    },
+    {
+      "id": "spare-parts",
+      "name": "قطعات یدکی",
+      "slug": "spare-parts", 
+      "description": "قطعات یدکی اورجینال برای کولرهای سلولزی",
+      "productCount": 24,
+      "subcategories": [
+        {"id": "pumps", "name": "پمپ آب", "slug": "pumps", "productCount": 6},
+        {"id": "pads", "name": "پد سلولزی", "slug": "pads", "productCount": 8},
+        {"id": "motors", "name": "موتور فن", "slug": "motors", "productCount": 5},
+        {"id": "controllers", "name": "کنترلر", "slug": "controllers", "productCount": 5}
+      ]
+    },
+    {
+      "id": "accessories",
+      "name": "لوازم جانبی",
+      "slug": "accessories",
+      "description": "لوازم جانبی و تکمیلی برای سیستم های کولر سلولزی", 
+      "productCount": 15,
+      "subcategories": [
+        {"id": "filters", "name": "فیلتر", "slug": "filters", "productCount": 4},
+        {"id": "pipes", "name": "لوله و اتصالات", "slug": "pipes", "productCount": 6},
+        {"id": "sensors", "name": "سنسور", "slug": "sensors", "productCount": 5}
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "pkg-001",
+      "name": "پکیج کولر سلولزی صنعتی 18000",
+      "brand": "سانتی گراد",
+      "category": "cooling-packages",
+      "subcategory": "industrial",
+      "price": 45000000,
+      "originalPrice": 52000000,
+      "discountPercentage": 13,
+      "isSpecialOffer": true,
+      "isFeatured": true,
+      "image": "/api/placeholder/300/300",
+      "images": ["/api/placeholder/300/300", "/api/placeholder/300/301", "/api/placeholder/300/302"],
+      "description": "پکیج کامل کولر سلولزی صنعتی با ظرفیت 18000 متر مکعب بر ساعت، مناسب برای سالن های بزرگ و کارخانجات",
+      "specifications": {
+        "ظرفیت": "18000 متر مکعب بر ساعت",
+        "توان موتور": "1.5 کیلووات",
+        "ابعاد": "120 × 120 × 80 سانتی متر",
+        "وزن": "85 کیلوگرم",
+        "نوع پد": "سلولزی 10 سانتی متر",
+        "گارانتی": "2 سال"
+      },
+      "stock": 15,
+      "tags": ["صنعتی", "پرفروش", "گارانتی دار"],
+      "rating": 4.8,
+      "reviewCount": 23,
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "pkg-002", 
+      "name": "پکیج کولر سلولزی خانگی 4500",
+      "brand": "سانتی گراد",
+      "category": "cooling-packages",
+      "subcategory": "residential",
+      "price": 12500000,
+      "originalPrice": 14000000,
+      "discountPercentage": 11,
+      "isSpecialOffer": false,
+      "isFeatured": true,
+      "image": "/api/placeholder/300/303",
+      "description": "پکیج کولر سلولزی خانگی با ظرفیت 4500 متر مکعب، ایده آل برای منازل و دفاتر کوچک",
+      "specifications": {
+        "ظرفیت": "4500 متر مکعب بر ساعت", 
+        "توان موتور": "0.37 کیلووات",
+        "ابعاد": "80 × 60 × 50 سانتی متر",
+        "وزن": "35 کیلوگرم",
+        "نوع پد": "سلولزی 7 سانتی متر",
+        "گارانتی": "18 ماه"
+      },
+      "stock": 8,
+      "tags": ["خانگی", "اقتصادی", "کم مصرف"],
+      "rating": 4.5,
+      "reviewCount": 12,
+      "createdAt": "2024-02-01"
+    },
+    {
+      "id": "sp-001",
+      "name": "پمپ آب کولر سلولزی یونیورسال",
+      "brand": "پمپیران",
+      "category": "spare-parts",
+      "subcategory": "pumps", 
+      "price": 850000,
+      "isContactPrice": false,
+      "image": "/api/placeholder/300/304",
+      "description": "پمپ آب یونیورسال مناسب برای انواع کولرهای سلولزی، دارای فشار بالا و مقاوم در برابر خوردگی",
+      "specifications": {
+        "قدرت": "40 وات",
+        "فشار": "15 متر",
+        "دبی": "800 لیتر در ساعت",
+        "ولتاژ": "220 ولت",
+        "جنس": "پلاستیک ضد خوردگی",
+        "گارانتی": "1 سال"
+      },
+      "stock": 25,
+      "tags": ["یونیورسال", "مقاوم", "فشار بالا"],
+      "rating": 4.3,
+      "reviewCount": 8,
+      "createdAt": "2024-01-20"
+    },
+    {
+      "id": "sp-002",
+      "name": "پد سلولزی ایرانی 10 سانتی",
+      "brand": "پد سازان",
+      "category": "spare-parts", 
+      "subcategory": "pads",
+      "price": 320000,
+      "originalPrice": 380000,
+      "discountPercentage": 16,
+      "isSpecialOffer": true,
+      "image": "/api/placeholder/300/305",
+      "description": "پد سلولزی ایرانی با ضخامت 10 سانتی متر، دارای کیفیت بالا و عمر طولانی",
+      "specifications": {
+        "ضخامت": "10 سانتی متر",
+        "ابعاد": "60 × 60 سانتی متر",
+        "جنس": "سلولز طبیعی",
+        "کیفیت": "درجه یک",
+        "عمر مفید": "2-3 سال",
+        "کشور سازنده": "ایران"
+      },
+      "stock": 50,
+      "tags": ["ایرانی", "باکیفیت", "اقتصادی"],
+      "rating": 4.6,
+      "reviewCount": 15,
+      "createdAt": "2024-02-10"
+    },
+    {
+      "id": "sp-003",
+      "name": "موتور فن کولر سلولزی 1/2 اسب",
+      "brand": "الکتروموتور",
+      "category": "spare-parts",
+      "subcategory": "motors",
+      "isContactPrice": true,
+      "image": "/api/placeholder/300/306",
+      "description": "موتور فن با قدرت نیم اسب، مناسب برای کولرهای متوسط و صنعتی کوچک",
+      "specifications": {
+        "قدرت": "0.37 کیلووات (1/2 اسب)",
+        "دور": "1400 دور در دقیقه",
+        "ولتاژ": "380 ولت سه فاز",
+        "فرکانس": "50 هرتز",
+        "کلاس عایقی": "B",
+        "گارانتی": "2 سال"
+      },
+      "stock": 12,
+      "tags": ["صنعتی", "قدرتمند", "تماس بگیرید"],
+      "rating": 4.7,
+      "reviewCount": 6,
+      "createdAt": "2024-01-25"
+    },
+    {
+      "id": "sp-004",
+      "name": "کنترلر دیجیتال کولر سلولزی",
+      "brand": "کنترل تک",
+      "category": "spare-parts",
+      "subcategory": "controllers",
+      "price": 2450000,
+      "isFeatured": true,
+      "image": "/api/placeholder/300/307",
+      "description": "کنترلر دیجیتال هوشمند با قابلیت تنظیم دما، رطوبت و کنترل از راه دور",
+      "specifications": {
+        "نوع": "دیجیتال LCD",
+        "ولتاژ": "220 ولت",
+        "خروجی": "10 آمپر",
+        "سنسورها": "دما و رطوبت",
+        "ریموت": "بله",
+        "گارانتی": "18 ماه"
+      },
+      "stock": 18,
+      "tags": ["هوشمند", "دیجیتال", "ریموت دار"],
+      "rating": 4.9,
+      "reviewCount": 11,
+      "createdAt": "2024-02-05"
+    },
+    {
+      "id": "acc-001",
+      "name": "فیلتر هوا کولر سلولزی",
+      "brand": "فیلتر سازان", 
+      "category": "accessories",
+      "subcategory": "filters",
+      "price": 180000,
+      "image": "/api/placeholder/300/308",
+      "description": "فیلتر هوای قابل شستشو برای تصفیه بهتر هوای عبوری از کولر",
+      "specifications": {
+        "نوع": "قابل شستشو",
+        "جنس": "فلز آلومینیومی",
+        "ابعاد": "40 × 30 سانتی متر",
+        "ضخامت": "2 سانتی متر",
+        "کاربری": "یونیورسال",
+        "عمر مفید": "5 سال"
+      },
+      "stock": 30,
+      "tags": ["قابل شستشو", "دوام بالا", "یونیورسال"],
+      "rating": 4.2,
+      "reviewCount": 4,
+      "createdAt": "2024-01-30"
+    },
+    {
+      "id": "pkg-003",
+      "name": "پکیج کولر سلولزی صنعتی 25000",
+      "brand": "سانتی گراد",
+      "category": "cooling-packages",
+      "subcategory": "industrial", 
+      "originalPrice": 68000000,
+      "discountPercentage": 15,
+      "isSpecialOffer": true,
+      "isFeatured": false,
+      "isContactPrice": true,
+      "image": "/api/placeholder/300/309",
+      "description": "پکیج کولر سلولزی صنعتی سنگین با ظرفیت 25000 متر مکعب، مناسب برای کارخانجات بزرگ",
+      "specifications": {
+        "ظرفیت": "25000 متر مکعب بر ساعت",
+        "توان موتور": "2.2 کیلووات",
+        "ابعاد": "150 × 140 × 90 سانتی متر", 
+        "وزن": "120 کیلوگرم",
+        "نوع پد": "سلولزی 15 سانتی متر",
+        "گارانتی": "3 سال"
+      },
+      "stock": 5,
+      "tags": ["صنعتی سنگین", "ظرفیت بالا", "تماس بگیرید"],
+      "rating": 4.9,
+      "reviewCount": 3,
+      "createdAt": "2024-01-10"
+    }
+  ]
+}
