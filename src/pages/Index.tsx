@@ -4,17 +4,18 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Star, Zap, Shield, Truck } from "lucide-react";
-import { Header as Header } from "../../../src/components/Header";
+import { Header } from "@/components/Header";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductFilter } from "@/components/ProductFilter";
 import { ProductDetails } from "@/components/ProductDetails";
 import { ShoppingCart } from "@/components/ShoppingCart";
+import { Hero } from "@/components/Hero";
+import { Features } from "@/components/Features";
+import { Footer } from "@/components/Footer";
 import { Product, CartItem, FilterOptions, Category } from "@/types/product";
 import { useSharedCart } from "../../../src/utils/cartUtils";
 import productsData from "@/data/products.json";
 import { useToast } from "@/hooks/use-toast";
-import heroBackground from "@/assets/hero-background.jpg";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -203,71 +204,10 @@ const Index = () => {
         mode="store"
       />
 
-      {/* Hero Section */}
-      <section 
-        className="bg-gradient-hero text-white py-20 relative overflow-hidden bg-cover bg-center bg-no-repeat mt-16 sm:mt-20"
-        style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(${heroBackground})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-hero/80"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="space-y-4">
-              <Badge className="bg-secondary text-secondary-foreground px-4 py-2 text-sm font-semibold">
-                بزرگترین مرکز فروش قطعات کولر سلولزی
-              </Badge>
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight" dir="rtl">
-                سانتی گراد استور
-              </h1>
-              <p className="text-xl md:text-2xl text-white/90 leading-relaxed" dir="rtl">
-                مرکز تخصصی فروش پکیج‌ها و قطعات یدکی کولر سلولزی
-                <br />
-                با بهترین کیفیت و قیمت‌های مناسب
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                size="lg" 
-                className="bg-secondary hover:bg-secondary-light text-secondary-foreground px-8 py-3 text-lg font-semibold hover:shadow-secondary transition-all duration-300"
-                onClick={() => document.getElementById('products-section')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                <Zap className="w-5 h-5 ml-2" />
-                مشاهده محصولات
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg"
-                onClick={() => window.location.href = 'tel:02188776655'}
-              >
-                تماس برای مشاوره
-              </Button>
-            </div>
-
-            {/* Features */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-                <Shield className="w-12 h-12 mx-auto mb-3 text-secondary" />
-                <h3 className="font-semibold text-lg mb-2">گارانتی معتبر</h3>
-                <p className="text-sm text-white/80">تمام محصولات دارای گارانتی معتبر</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-                <Truck className="w-12 h-12 mx-auto mb-3 text-secondary" />
-                <h3 className="font-semibold text-lg mb-2">ارسال سریع</h3>
-                <p className="text-sm text-white/80">ارسال رایگان برای خریدهای بالای 5 میلیون</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center">
-                <Star className="w-12 h-12 mx-auto mb-3 text-secondary" />
-                <h3 className="font-semibold text-lg mb-2">کیفیت برتر</h3>
-                <p className="text-sm text-white/80">محصولات اورجینال با بالاترین کیفیت</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* Products Section */}
-      <section id="products-section" className="py-16">
+      <main id="products-section" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4" dir="rtl">محصولات ما</h2>
@@ -371,44 +311,11 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </main>
 
-      {/* Footer */}
-      <footer className="bg-gradient-hero text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-right" dir="rtl">
-            <div>
-              <h3 className="font-bold text-lg mb-4">سانتی گراد استور</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                بیش از ده سال تجربه در زمینه فروش و نصب کولرهای سلولزی
-                با بهترین کیفیت و خدمات پس از فروش
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4">تماس با ما</h3>
-              <div className="space-y-2 text-sm text-white/80">
-                <p>📞 021-88776655</p>
-                <p>📧 info@santigradstore.com</p>
-                <p>📍 تهران، میدان انقلاب، خیابان کریمخان زند</p>
-              </div>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4">خدمات ما</h3>
-              <div className="space-y-2 text-sm text-white/80">
-                <p>• فروش پکیج‌های کولر سلولزی</p>
-                <p>• قطعات یدکی اورجینال</p>
-                <p>• مشاوره و نصب</p>
-                <p>• خدمات پس از فروش</p>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-white/20 mt-8 pt-6 text-center">
-            <p className="text-sm text-white/60">
-              © 2024 سانتی گراد استور. تمامی حقوق محفوظ است.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Features />
+
+      <Footer />
 
       {/* Shopping Cart */}
       <ShoppingCart
